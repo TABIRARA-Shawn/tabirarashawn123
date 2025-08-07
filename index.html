@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Form</title>
+</head>
+<body>
+
+  <div>
+    <img src="Job Application/images/Applicant.png alt="Applicant Photo" width="150">
+    <h3>Welcome Message:</h3>
+    <p>
+      Thank you for your interest in working with us! Please fill out the application form below to get started.
+    </p>
+  </div>
+
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3VSzAV1-f0s?si=O7FGuiRx7ghlS-Yb" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+
+    <fieldset>
+      <legend>Job Application</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="on"><br><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="987 UNIDA ST, Imus,Cavite" readonly><br><br>
+
+      <label for="status">Application Status:</label>
+      <input type="text" id="status" name="status" disabled value="Pending"><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="50"><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g. 09123456789"><br><br>
+    </fieldset>
+
+    <br>
+    <button type="submit">Submit</button>
+
+</body>
+</html>
