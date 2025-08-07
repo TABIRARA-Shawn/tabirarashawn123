@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Form</title>
+</head>
+<body>
+
+  <!-- IMAGE (put the actual file in the images folder) -->
+  <img src="images/sample-photo.jpg" alt="Applicant Photo" width="150" height="150">
+
+  <!-- YOUTUBE VIDEO EMBED -->
+  <h3>Introduction Video:</h3>
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/3VSzAV1-f0s?si=O7FGuiRx7ghlS-Yb" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+  </iframe>
+
+  <br><br>
+
+  <!-- MESSAGE TEXTAREA -->
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+
+  <br><br>
+
+  <!-- REASON TEXTAREA -->
+  <label for="reason">Why do you want this job?</label><br>
+  <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+
+  <br><br>
+
+  <!-- FIELDSET -->
+  <fieldset>
+    <legend>Applicant Information</legend>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="John Doe" maxlength="50"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="on"><br><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" value="Blk 35 L 4&5, UCC, Imus" readonly><br><br>
+
+    <label for="status">Application Status:</label>
+    <select id="status" name="status">
+      <option value="student">Student</option>
+      <option value="graduate">Graduate</option>
+      <option value="employed">Currently Employed</option>
+    </select><br><br>
+
+    <label for="number">Phone Number:</label>
+    <input type="text" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+  </fieldset>
+
+  <br>
+
+  <!-- SUBMIT BUTTON CENTERED -->
+  <div style="text-align: center;">
+    <button type="submit">Submit Application</button>
+  </div>
+
+</body>
+</html>
